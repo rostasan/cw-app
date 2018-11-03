@@ -5,10 +5,25 @@
   <title>CwApp</title>
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- inline spinner styles to be able to display spinner right away -->
+    <style type="text/css">
+      body, html {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
 </head>
-<body>
-  <app-root></app-root>
+<body class="bg-light main">
+  <app-root class="bg-light">
+      <!-- loading layout replaced by app after startupp -->
+      <div class="d-flex justify-content-center bg-light">
+        <div class="indexLoading"
+            <img src="./assets/images/global/svg/cw_logo.svg" width="100%">
+        </div>
+      </div>
+
+  </app-root>
 </body>
 </html>

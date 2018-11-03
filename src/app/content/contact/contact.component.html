@@ -1,0 +1,63 @@
+<div class="body3">
+  <div class="wrapper page-header">
+    <div id="page-header-title" class="white">We welcome  feedback and comments</div>
+  </div>
+  <div class="main">
+    <!-- content -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+       <div id="g-map">
+         <iframe width="900" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=3658+W+Irving+Park+Rd.+Chicago,+IL+60618&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=55.981213,89.736328&amp;ie=UTF8&amp;hq=&amp;hnear=3658+W+Irving+Park+Rd,+Chicago,+Illinois+60618&amp;t=m&amp;ll=41.959299,-87.719822&amp;spn=0.022339,0.080681&amp;z=14&amp;output=embed">
+        </iframe>
+      </div>
+    </div>
+    </div>
+      <div class="row">
+        <div class="form-group col">
+            <h2 class="under">Contact Us</h2>
+              <form id="ContactForm" name="contact_form" method="post" action="mailer.php" onSubmit="return evalid()">
+                <div class="wrapper">
+                  <label class="col-sm-2 col-form-label">Name:</label>
+                  <input name="fname" type="text"  class="input" />
+                </div>
+                <div class="wrapper">
+                  <label class="col-sm-2 col-form-label">E-mail:</label>
+                  <input type="text" name="mail"  class="input" />
+                </div>
+                <div class="wrapper">
+                  <label class="col-sm-2 col-form-label">City:</label>
+                  <input name="city" type="text"  class="input" />
+                </div>
+                <div class="wrapper">
+                  <label class="col-sm-2 col-form-label">Phone:</label>
+                  <input name="phone" type="text"  onkeypress="return numere(event)" onkeyup="return limitarelungime(this, 10)"
+                    class="input" />
+                </div>
+                <div class="wrapper">
+                  <label class="col-sm-2 col-form-label">Message:</label>
+                  <textarea name="message" onkeyup="return limitarelungime(this, 255)" cols="35" rows="5"></textarea>
+                </div>
+                <div class="wrapper">
+                  <div>Enter the Captcha you see below</div>
+                  <input id="chapcha_code" size="10" name="chapcha_code" type="text" />
+                  <img src="security_image.php" width="200px" border="0" />
+                </div>
+                <input type="reset" name="reset" value="Reset" class="contactlinks" />
+                <input type="submit" name="Submit" value="Submit" class="contactlinks">
+              </form>
+        </div>
+        <div class="col">
+              <h2 class="under">Location Info</h2>
+              <div id="address">
+                  Location:<br><br>
+                  Telephone:<br>
+                  Email:
+                3658 W Irving Park Rd. Chicago, IL 60618<br>
+                773.588.5488<br>
+                <a href="mailto:cornel@chickenworkschicago.com" class="color2">Email Direct</a></div>
+        </div>
+      </div>
+   </div>
+  </div>
+</div>

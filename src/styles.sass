@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./sass/variables"
+
+@import "./sass/mixins"
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans')
+
+body, html, div, a
+  font-family: 'PT Sans', sans-serif
+    
+
+
+ 
+
+
+.white
+    color: #ffffff
+
+.left
+    text-align: left
+
+.right
+    text-align: right
+
+.center
+    text-align: center
+
+a
+    text-decoration: none
+    color: white
+    font-weight: 400
+
+.indexLoading
+    opacity: 0.5
+
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media screen and (min-width: 1200px)
+    body
+        border: 0
+        // font:14px "helvetica", Arial, Helvetica, sans-serif;color:#696969;
+        line-height: normal
+        // Push down body content to get it out from under the menu
+        margin-top: 9em
+        align-items: center;   
+    
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) and (max-width: 1199px)
+    body
+        border: 0
+        // font:14px "helvetica", Arial, Helvetica, sans-serif;color:#696969;
+        line-height: normal
+        // Push down body content to get it out from under the menu
+        margin-top: 9em
+        align-items: center;  
+        
+// Medium devices (tablets, between 768px and 991px)
+@media screen and (min-width: 768px) and (max-width: 991px)
+        body
+            border: 0
+            // font:14px "helvetica", Arial, Helvetica, sans-serif;color:#696969;
+            line-height: normal
+            // Push down body content to get it out from under the menu
+            margin-top: 4em
+            align-items: center;  
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (min-width: 576px) and (max-width: 767px)
+        body
+            border: 0
+            // font:14px "helvetica", Arial, Helvetica, sans-serif;color:#696969;
+            line-height: normal
+            // Push down body content to get it out from under the menu
+            margin-top: 3.8em
+            align-items: center;  
+
+@media screen and (max-width: 576px)
+        body html
+            width: auto !important
+            overflow-x: hidden !important
+            margin: 2em
+        .main
+            margin: 0

@@ -1,0 +1,75 @@
+npm install -g @angular/cli ONLY needed if updating to new version
+
+ng new app
+
+npm install jquery --save
+popper.js@^1.14.3
+npm install bootstrap
+
+ng g c navbar
+ng g m app-routing --flat
+ng g m app-routing-prod --flat
+
+ng g module content
+
+cd src\app\content
+ng g c home
+ng g c community
+ng g c catering
+ng g c menu
+ng g c contact
+git remote add origin
+
+ISSUE WITH SASS LOADER
+npm install node-sass --save
+
+
+To correct SASS syntax
+http://css2sass.herokuapp.com/
+
+tsconfig.app.json
+Add `
+  "include": [
+    "../src/**/*",
+    "../models/**/*.ts"
+  ]
+`
+
+Using Andriod SDK device emulator to test
+ng serve --host 0.0.0.0 allows for external device to reach server
+
+  npm install --save-dev @types/jquery
+This is to solve the $ error when doing a DOM query
+
+  npm i @types/jquery
+then import the type 
+  import * as $ from 'jquery';
+
+  https://www.google.com/recaptcha/admin#site/343406438?setup
+
+  Media Querry setup
+
+// Extra large devices (large desktops, 1200px and up)
+@media screen and (min-width: 1200px)
+ 
+    
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) and (max-width: 1199px)
+
+        
+// Medium devices (tablets, between 768px and 991px)
+@media screen and (min-width: 768px) and (max-width: 991px)
+
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (min-width: 576px) and (max-width: 767px)
+
+            
+@media screen and (max-width: 576px)
+
+index
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+
+
