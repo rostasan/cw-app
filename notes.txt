@@ -47,7 +47,7 @@ then import the type
 
   https://www.google.com/recaptcha/admin#site/343406438?setup
 
-  Media Querry setup
+***********Media Querry setup*****************
 
 // Extra large devices (large desktops, 1200px and up)
 @media screen and (min-width: 1200px)
@@ -66,6 +66,8 @@ then import the type
 
             
 @media screen and (max-width: 576px)
+
+***********Media Querry setup*****************
 
 index
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
