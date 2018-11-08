@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="row">
+    <div class="col cover" (mouseup)="closeNav()">
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+        <div class="sidenav" id="sideNav">
+          <div class="sideWidth py-5 pl-5">
+            <form role="search" method="get" name="searchform" id="searchform" action="http://www.chickenworkschicago.com/testing123/">
+              <div>
+                <input type="text" value="" name="s" id="s" autocomplete="off" placeholder="Search...">
+                <button>
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+              <div id="autocomplete"></div>
+            </form>
+            <div>
+              <ul class="">
+                <li><a class="nav-link nav-item" routerLink="home" [routerLinkActive]="['link-active']" (mouseup)="closeNav()">Welcome</a></li>
+                <li class=""><a class="nav-link nav-item" routerLink="menu" [routerLinkActive]="['link-active']" (mouseup)="closeNav()">Menu</a></li>
+                <li><a class="nav-link nav-item" routerLink="catering" [routerLinkActive]="['link-active']" (mouseup)="closeNav()">Catering</a></li>
+                <li><a class="nav-link nav-item" routerLink="community" [routerLinkActive]="['link-active']" (mouseup)="closeNav()">Our
+                    Location</a></li>
+                <li><a class="nav-link nav-item" routerLink="contact" [routerLinkActive]="['link-active']" (mouseup)="closeNav()">Community</a></li>
+                <li><a href="https://www.grubhub.com/r/w/26915/restaurant/302864">Get
+                    Delivery</a></li>
+              </ul>
+            </div>
+      <!-- Begin Reservation -->
+      <!-- End Reservation -->
+    
+      <!-- Begin side menu sidebar -->
+          <div class="content">
+            <ul class="sidebar_widget">
+                <li>
+                  <h2>What’s New</h2>
+                  <ul>
+                    <li>
+                      <a href="http://www.chickenworkschicago.com/testing123/upcomming-promo-posting/">Upcomming Promo
+                        Posting</a>
+                    </li>
+                  </ul>
+                </li>
+                <li id="text-7" class="widget widget_text">
+                  <h2 class="widgettitle">Contact Us</h2>
+                  <div class="textwidget"><strong>773.588.5488</strong><br>
+                    3658 W Irving Park Rd.<br>
+                    Chicago, IL 60618</div>
+                </li>
+                <li id="text-2" class="widget widget_text">
+                  <h2 class="widgettitle">We Proudly Accept</h2>
+                  <div class="credit-cards">  
+                      <img src="../../assets/images/nav/visa.png" width="60px" class="p-1">
+                      <img src="../../assets/images/nav/mastercard.png" width="60px" class="p-1">
+                      <img src="../../assets/images/nav/discover.png" width="60px" class="p-1">  
+                      <img src="../../assets/images/nav/american-express.png" width="60px" class="p-1">
+                  </div>
+                </li>
+              </ul>
+           </div>
+           </div>
+       </div>
+      
+    </div>
+  </div>
+</div>

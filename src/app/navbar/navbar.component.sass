@@ -1,176 +1,39 @@
-// header
-// 	padding-top: 21px
-// 	height: 9em
-//     background-color: blue
+.logo
+    max-width: 18em
+    object-fit: contain
 
-.navbar-nav p-reset
-    padding: 0px
+// the three horizontal bars that open the menu
+svg
+    margin-bottom: -20px
+    margin-left: 50px
 
-.farm-sky
-    background: url(../../assets/images/global/header-farm-bg.png) top center no-repeat
-
-.line
-    height: 5px
-    background: rgb(252, 245, 245)
-    
-.wrapper .line
-    background-color: #000000
-
-
-div
-    clear: both
-
-#menu
-    display: block
-    height: 26px
-    font-size: 17px
-    font-family: 'OpenSansCondensedBold', Arial Narrow, sans-serif
-    color: #bbb
-    margin: 5px 5px 5px
+.menu    
+    font-family: PT Sans
+    font-size: 16px
+    font-weight: bolder
+    letter-spacing: 1px
     text-transform: uppercase
-    text-decoration: none
-    text-align: center
-    font-style: normal
-    padding: 10px 10px 0px 10px
-    background: #000
-    position: relative
-    z-index: 1000
-    border: solid 2px #fff
-    -webkit-border-radius: 10px
-    -moz-border-radius: 10px
-    border-radius: 10px
-    -webkit-box-shadow: 1px 1px 3px 1px #111111
-    -moz-box-shadow: 1px 1px 3px 1px #111111
-    box-shadow: 1px 1px 3px 1px #111111
+
+.nav-menu
+    background-color: rgba(255, 255, 255, 0.8)
+    min-width: 100%
+
+.link-active
+    color: #ff8400 !important
+
+a
+    &:link
+        color: #000
+    &:visited
+        color: #000
     &:hover
-      color: #F6A01A
-    .active a .nav-link
-        color: #F6A01A
+        color: #ff8400
+    &:active
+        color: #ff8400
 
-.nav-item a
-    // display: block
-    // font-size: 17px
-    // font-family: 'OpenSansCondensedBold', Arial Narrow, sans-serif
-    // text-decoration: none
-    // text-align: center
-    // font-style: normal
-    // padding: 10px 10px 10px 10px
-    color: #bbb
-    text-transform: uppercase
-    font-weight: bold
-    background: #000
-    border: solid 2px #fff
-    -webkit-border-radius: 10px
-    -moz-border-radius: 10px
-    border-radius: 10px
-    -webkit-box-shadow: 1px 1px 3px 1px #111111
-    -moz-box-shadow: 1px 1px 3px 1px #111111
-    box-shadow: 1px 1px 3px 1px #111111
-    &:hover
-      color: #F6A01A
-    .active a .nav-link
-        color: #F6A01A
-
-ul
-    padding-left: 10em
-
-#main
-  transition: margin-left 0.5s
-  padding: 20px
-  overflow: hidden
-  width: 100%
-  
-
-// Extra large devices (large desktops, 1200px and up)
-@media screen and (min-width: 1200px)
-  a
-      display: block
-  .nav-padding
-      padding: 0.5em
-     
-    
-// Large devices (desktops, 992px and up)
-@media screen and (min-width: 992px) and (max-width: 1199px)
-  a
-      display: block
-  .nav-padding
-      padding: 0.5em
-        
-// Medium devices (tablets, between 768px and 991px)
-@media screen and (min-width: 768px) and (max-width: 991px)
-  a
-      display: block
-
-  .logo img
-      width: 30vh
-      margin-left: 0px
-      margin-right: -15px
-
-  .open-slide
-     display: none
-  .nav-padding
-      padding: .5em
-
-// Small devices (landscape phones, 576px and up)
-@media screen and (min-width: 576px) and (max-width: 767px)
-  col > .logo > img
-    visibility: hidden
-  .nav-padding
-      padding: .5em
-  a
-    display: block
-    color: #f2f2f2
-    text-align: center
-    text-decoration: none
-    font-size: 17px
-  // ul
-  //   margin: 8px 0 0 0
-  //   list-style: none
-  a:hover
-    color: #000
-  .navbar-nav
-    display: none
-  .open-slide
-    display: none
-            
-@media screen and (max-width: 576px)
-
-    a
-        display: block
-    .logo img
-        width: 15vh
-        position: absolute
-        margin-left: auto
-        margin-right: auto
-        left: 0
-        right: 0
-        bottom: 1px
-    #side-menu
-        width: 0
-    .side-nav
-        height: 100%
-
-        position: fixed
-        z-index: 1
-        top: 0
-        left: 0
-        background-color: #111
-        opacity: 0.9
-        overflow-x: hidden
-        padding-top: 60px
-        transition: 0.5s
-        a
-            padding: 10px 10px 10px 30px
-            text-decoration: none
-            font-size: 22px
-            color: #ccc
-            display: block
-            transition: 0.3s
-            &:hover
-            color: #fff
-        .btn-close
-            position: absolute
-            top: 0
-            right: 22px
-            font-size: 36px
-            margin-left: 50px
+.fixed
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;

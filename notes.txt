@@ -74,4 +74,10 @@ index
 
 
 
+Chaning the site to match the Word Press version
 
+https://unsplash.com/
+
+adding side nav and nav animation
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push_opacity

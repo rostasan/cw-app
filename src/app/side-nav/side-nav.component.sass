@@ -1,0 +1,58 @@
+// ************************** Side Nav ****************************
+
+body
+  transition: background-color .5s
+
+.container > .cover
+  background-color: rgba(255, 255, 255, 0.8)
+  background-image: url(../../assets/images/whitecard.jpg) repeat
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  z-index: 1
+
+.sideWidth
+  float: right
+  background-color: #111
+  top: 0
+  height: 100%
+
+.sidenav
+  height: 100%
+  float: right
+  width: 0
+  position: fixed
+  z-index: 11
+
+  right: 0
+  background-color: rgba(255, 255, 255, 0.1)
+  overflow-x: hidden
+  transition: 0.2s
+  a
+    padding: 8px 8px 8px 32px
+    text-decoration: none
+    font-size: 25px
+    color: #818181
+    display: block
+    transition: 0.2s
+    &:hover
+      color: #f1f1f1
+  .closebtn
+    position: absolute
+    top: 0
+    right: 25px
+    font-size: 36px
+    margin-left: 50px
+
+
+
+#main
+  transition: margin-left .5s
+  padding: 16px
+
+@media screen and (max-height: 450px)
+  .sidenav
+    padding-top: 15px
+    a
+      font-size: 18px
