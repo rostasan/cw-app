@@ -1,123 +1,134 @@
-//  Extra large devices (large desktops, 1200px and up)
-@media screen and (min-width: 1200px)
-    .background
-          background:url(/assets/images/global/footer-bgbase.gif) repeat
+@import '~bootstrap/scss/functions'
+@import '~bootstrap/scss/variables'
+@import '~bootstrap/scss/mixins'
 
-    .wrap 
-        background:url(../../assets/images/global/footer-bgtop.gif) repeat-x 
-        padding: 0px
-        margin-top: -10px
+// @include media-breakpoint-only(xs)
+// @include media-breakpoint-only(sm)
+// @include media-breakpoint-only(md)
+// @include media-breakpoint-only(lg)
+// @include media-breakpoint-only(xl)
 
-    .container
-        padding-top: 55px
+img 
+    width: 100%
+    @include media-breakpoint-only(xs)
+    width: 60%
+    padding: 10px
+    @include media-breakpoint-only(sm)
+   
+.background
+        background:url(/assets/images/global/footer-bgbase.gif) repeat
 
+.wrap 
+    background:url(../../assets/images/footer/cw-footer-bg.png)
+    background-color: #222222
+    background-repeat: no-repeat
+    background-size: contain
+    background-attachment: inherit
+    background-position: right bottom
+    padding: 10px
+    display: table    
 
-    h4
-        font-weight: bold
+.copyright
+    float: left
+    width: 100%
+    height: 100%
+    font-size: 12px
+    font-weight: normal
+    padding: 10px
+    letter-spacing: 0
+    text-align: left
+    color: #999999
+    background-color: #222222
 
-    .panel
-        margin-top: 10px
-        padding: 25px 20px 10px 20px
-        background: url('../../assets/images/global/dark_wood.png') #000
+.cell
+    display: table-cell
+    -ms-flex: 0 0 230px
+    flex: 0 0 230px
+// @include media-breakpoint-only(xs)
+// @include media-breakpoint-only(sm)
 
-    .green
-        text-align: center
-
-    .off-white 
-        color: #777777
-
-    hr
-        border: 0
-        clear:both
-        display:block
-        width: 96%              
-        background-color:#777777
-        height: 1px
-
-    a
-        &:link
-            color: white
-            text-decoration: none
-        &:visited
-            color: white
-            text-decoration: none
-        &:hover
-            color: grey
-            text-decoration: none
-        &:active
-            color: white
-            text-decoration: none
-
-    .white-deliver
-        color: #ffffff
-        text-align: center
-        margin-top: -5px
-        font-size: 30px
-        font-family: 'OpenSansCondensedBold',Arial Narrow, sans-serif
-        padding: 8px 5px 5px 5px
-        background: #ef9c19
-        line-height: 1em
-        border: solid 3px #ccc
-        -webkit-border-radius: 10px
-        -moz-border-radius: 10px
-        border-radius: 10px
-        -webkit-box-shadow: 1px 1px 3px 1px #222
-        -moz-box-shadow: 1px 1px 3px 1px #222
-        box-shadow: 1px 1px 3px 1px #222
-        text-shadow: 2px 1px 3px #b55f02
-        filter: drop-shadow(color = #b55f02, offx = 2, offy = 1)
-        width: 230px
-
-    .orange
-      text-align: left
-
-    #ribbon
-        height: 483px
-        width: 329px
-        margin: -140px 0px 0px 0px
-        position: absolute
-        z-index: 10000
-        background: url(../../assets/images/global/cw-ribbon.png)
-
-    .menu-footer
-        text-align: right
-
-    .menu-copyright
-        text-align: left
-
-// Large devices (desktops, 992px and up)
-@media screen and (min-width: 992px) and (max-width: 1199px)
-    .menu-footer
-        text-align: right
-
-    .menu-copyright
-        text-align: left
         
-// Medium devices (tablets, between 768px and 991px)
-@media screen and (min-width: 768px) and (max-width: 991px)
-    .menu-footer
-        text-align: right
+.container
+    padding-top: 55px
 
-    .menu-copyright
-        text-align: left
 
-// Small devices (landscape phones, 576px and up)
-@media screen and (min-width: 576px) and (max-width: 767px)
-    .menu-footer
-        text-align: right
+h4
+    font-weight: bold
 
-    .menu-copyright
-        text-align: left
-            
-@media screen and (max-width: 576px)
-    .menu-footer
-        text-align: right
+.panel
+    margin-top: 10px
+    padding: 25px 20px 10px 20px
+    background: url('../../assets/images/global/dark_wood.png') #000
 
-    .menu-copyright
-        text-align: left
+.green
+    text-align: center
 
-    .panel
-        padding: 0px
+.off-white 
+    color: #777777
 
-    #ribbon 
-        background: url(../../assets/images/global/cw-ribbon.png)
+hr
+    border: 0
+    clear:both
+    display:block
+    width: 96%              
+    background-color:#777777
+    height: 1px
+
+a
+    &:link
+        color: white
+        text-decoration: none
+    &:visited
+        color: white
+        text-decoration: none
+    &:hover
+        color: grey
+        text-decoration: none
+    &:active
+        color: white
+        text-decoration: none
+
+.white-deliver
+    color: #ffffff
+    text-align: center
+    margin-top: -5px
+    font-size: 30px
+    font-family: 'OpenSansCondensedBold',Arial Narrow, sans-serif
+    padding: 8px 5px 5px 5px
+    background: #ef9c19
+    line-height: 1em
+    border: solid 3px #ccc
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    -webkit-box-shadow: 1px 1px 3px 1px #222
+    -moz-box-shadow: 1px 1px 3px 1px #222
+    box-shadow: 1px 1px 3px 1px #222
+    text-shadow: 2px 1px 3px #b55f02
+    filter: drop-shadow(color = #b55f02, offx = 2, offy = 1)
+    width: 230px
+
+.orange
+    text-align: left
+
+#ribbon
+    height: 483px
+    width: 329px
+    margin: -140px 0px 0px 0px
+    position: absolute
+    z-index: 10000
+    background: url(../../assets/images/global/cw-ribbon.png)
+
+.footer-font
+    @include media-breakpoint-only(md)
+        font-size: 12px
+    @include media-breakpoint-only(sm)
+        font-size: 12px
+    @include media-breakpoint-only(xs)
+        font-size: 12px
+
+.menu-footer
+    text-align: right
+
+.menu-copyright
+    text-align: left

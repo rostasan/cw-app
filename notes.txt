@@ -81,3 +81,17 @@ https://unsplash.com/
 adding side nav and nav animation
 
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push_opacity
+
+npm install --save font-awesome
+
+// in angular.json
+"build": {
+  "options": {
+    "styles": [
+      "../node_modules/font-awesome/css/font-awesome.css"
+      "styles.css"
+    ],
+  }
+}
+
+npm install @types/node --save

@@ -1,60 +1,133 @@
 <div class="container">
   <div class="row">
-    <div class="col d-flex justify-content-center">
-        <img src="../../../assets/images/home/chicken-saladbar-masthead.jpg" alt="" class="">
+    <div class="col d-flex justify-content-center slide-wrap">
+ 
+        <div [@listAnimation]="src">
+          <img src="{{ src }}" alt="" class="slide-image">
+        </div>
+ 
+
     </div>
+
   </div>
   <div class="row p-5">
-    <div class="col">
-        <a class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">
+    <div class="col-sm w-100 m-1">
+      <button class="buttons">
+        <a>
           <img src="../../../assets/images/home/cw-dine-in-icon.png" alt="" class="icons">
           Menu
         </a>
+      </button>
     </div>
-    <div class="col">
-      <a class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">
-        <img src="../../../assets/images/home/cw-catering-icon.png" alt="" class="icons">
-        Catering
-      </a>
+    <div class="col-sm w-100 m-1">
+      <button class="buttons">
+        <a>
+          <img src="../../../assets/images/home/cw-catering-icon.png" alt="" class="icons">
+          Catering
+        </a>
+      </button>
     </div>
-    <div class="col">
-      <a class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">
-                <img src="../../../assets/images/home/cw-deliver-icon.png" alt="" class="icons">
-        Delivery
-      </a>
-
+    <div class="col-sm w-100 m-1">
+      <button class="buttons">
+        <a>
+          <img src="../../../assets/images/home/cw-deliver-icon.png" alt="" class="icons">
+          Delivery
+        </a>
+      </button>
     </div>
    </div>
   <hr>
-   <div class="row bg">
-      <div class="col justify-content-center bg-community p-3 m-3">
-          <img src="../../../assets/images/home/chicago-best-promo.jpg" alt="" class="community">
+   <div class="row">
+      <div class="col-md bg-community">
+          <img src="../../../assets/images/home/chicago-best-promo.jpg" alt="" class="media">
             Part of Chicago's Best<br />
             content <br />
           <button type="button" class="btn btn-success">Link</button>
         </div>
 
-      <div class="col bg-community p-3 m-3">
-             <img src="../../../assets/images/home/cw-food-promo2.jpg" alt="" class="community">
-                Part of Chicago's Best<br />
+      <div class="col-md bg-community">
+             <img src="../../../assets/images/home/cw-food-promo2.jpg" alt="" class="media">
+               <h5>Part of Chicago's Best</h5> 
                 content <br />
               <button type="button" class="btn btn-success">Link</button>
       </div>
    </div>
+   <hr class="p-3">
+   <div class="row">
+     <div class="col d-flex justify-content-center p-3">
+      <h1 class="amatic community-heading">IN THE COMMUNITY</h1>
+     </div>
+   </div>
     <div class="row">
-      <div class="col">
-    
+      <div class="col p-2">
+    <h5>Upcomming Promo Posting</h5>
+    <span class="post-date">JANUARY 19, 2019 IN UNCATEGORIZED</span><br />
+          <a class="readmore" href="http://www.chickenworkschicago.com/testing123/hello-world/"> Read More</a>
+   
+    <img src="../../../assets/images/home/placeholder.jpg" alt="" class="community-img">
+        <p class="post-description">Welcome This is your first post. Edit or delete it, then start writing!</p>
       </div>
-      <div class="col">
-      
+      <div class="col p-2">
+       <h5>Gallery Posting</h5>
+     <span class="post-date">JANUARY 19, 2019 IN UNCATEGORIZED</span><br />
+            <a class="readmore" href="http://www.chickenworkschicago.com/testing123/hello-world/"> Read More</a>
+          <p>Empty gallery item. Please make sure you have upload image to it or check
+          the short code.</p>   
+        <p class="post-description">Welcome This is your first post. Edit or delete it, then start writing!</p>
       </div>
-      <div class="col">
-      
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
+      <div class="col p-2">
+       <h5>Event Posting</h5>
+          <span class="post-date">JANUARY 19, 2019 IN UNCATEGORIZED</span><br />
+      <a class="readmore" href="http://www.chickenworkschicago.com/testing123/hello-world/"> Read More</a>
+          <img src="../../../assets/images/home/placeholder.jpg" alt="" class="community-img">
+          <p class="post-description">Welcome This is your first post. Edit or delete it, then start writing!</p>
     
       </div>
     </div>
 </div>
+<div class="container-fluid">
+    <div class="row testimonial white d-flex align-items-center">
+      <div class="col">
+        <div class="row">
+          <div class="col d-flex justify-content-center p-4">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col d-flex justify-content-center p-4">
+              <h1 class="amatic community-heading">Fresh clean food. Good prices.</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-center p-4">
+                        Eve P.
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col d-flex justify-content-center p-4">
+        
+          </div>
+        </div>
+        
+            
+<!--               
+                  <div class="testimonial_stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                      class="fa fa-star"></i><i class="fa fa-star"></i></div>Huge salad bar.<div class="testimonial_slider_meta"><span
+                      class="post_detail" style="color:#ffffff">Stephen F.</span></div>
+              
+              
+             -->
+        
+      
+
+    
+        
+      </div>
+      </div>
+  </div>

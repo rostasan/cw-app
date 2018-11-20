@@ -1,13 +1,146 @@
+@import '~bootstrap/scss/functions'
+@import '~bootstrap/scss/variables'
+@import '~bootstrap/scss/mixins'
+
+// @include media-breakpoint-only(xs)
+// @include media-breakpoint-only(sm)
+// @include media-breakpoint-only(md)
+// @include media-breakpoint-only(lg)
+// @include media-breakpoint-only(xl)
+    
+    
 .icons
-    float: left
-    height: 3em
+    max-height: 2em
+    height: auto
+    width: auto\9 /* ie8 */
+    @include media-breakpoint-only(xs)
+        height: 1em
+    @include media-breakpoint-only(sm)
+        height: 1em
+    @include media-breakpoint-only(md)
+        height: 1.5em
+
+.buttons
+    width: 100%
+    font-size: 24px
+    text-transform: uppercase
+    font-weight: bold
+    color: white
+    background-color: #000000
+    padding: 1em
+    border-radius: 10px
+    border-style: none
+    // @include media-breakpoint-only(xs)
+    //     padding: 
+    @include media-breakpoint-only(sm)
+        font-size: 12px
+        padding: 
+    @include media-breakpoint-only(md)
+        font-size: 16px
+        padding: .5em
+
+.slide-wrap
+    -webkit-clip-path: inset(1% 5% 1% 5%)
+    clip-path: inset(1% 5% 1% 5%)
+    height: 25em
+    @include media-breakpoint-only(xs)
+        -webkit-clip-path: inset(1% 1% 1% 1%)
+        clip-path: inset(1% 1% 1% 1%)
+        height: 9em
+    @include media-breakpoint-only(sm)
+        height: 12em
+    @include media-breakpoint-only(md)
+        height: 16em   
+        
+
+.slide-image
+    // max-height: 
+    width: 100%
+    height: auto
+    // @include media-breakpoint-only(xs)
+ 
+    // @include media-breakpoint-only(sm)
+    //     height: 12em
+    // @include media-breakpoint-only(md)
+    //     height: 12em   
 
 .btn-secondary
     background-color: #222222 !important
 
-.community
+.media
     height: 18em
+    @include media-breakpoint-only(xs)
+        height: auto
+
 
 .bg-community
+    display: inline
     background-color: #E8E8E8
-    align-items: center 
+    // align-items: center 
+    text-align: center
+    padding: 20px
+    margin: 20px
+    @include media-breakpoint-only(xs)
+        img 
+            padding: 1px
+            margin: auto
+            width: 100%
+            height: auto
+    // @include media-breakpoint-only(sm)
+    //     height: 12em
+    // @include media-breakpoint-only(md)
+    //     height: 12em  
+    .btn-success
+        background-color: #76bb2c
+        border-color: #76bb2c
+        width: 50%
+
+.community-heading 
+    font-size: 60px
+    font-weight: 600
+    letter-spacing: 0px
+    line-height: 1em
+    @include media-breakpoint-only(xs)
+        font-size: 24px
+        font-weight: 600
+        text-align: center
+
+.community-img
+    max-width: 350px
+    padding: 5px
+
+.container-fluid
+    padding: 0
+
+.readmore
+    color: #6aae3d
+    text-transform: uppercase
+    border-left: 1px solid #d1d1d1
+    padding-left: 5px
+    font-weight: bold
+    font-size: 10px
+
+.post-date
+    font-size: 11px
+    margin-bottom: -5px
+    letter-spacing: 2px
+
+.post-description
+    padding-left: 5px
+    padding-right: 5px
+
+.testimonial
+    background-image: url(../../../assets/images/home/yellow-wheat-bg.jpg)
+    background-size: cover
+    max-width: 1425px
+    width: 100%
+    box-sizing: border-box
+    margin: 0
+    padding: 0 90px
+    height: 30em
+    @include media-breakpoint-only(xs)
+       padding: auto
+       margin: auto
+       display: inline    
+       text-align: center
+       height: auto

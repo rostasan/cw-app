@@ -1,17 +1,17 @@
-<div class="container nav-menu mt-0" *ngIf="!show">
-  <div class="row">
+<div class="container nav-menu mt-0 fixed" *ngIf="!show">
+  <div class="row d-none d-md-block">
     <div class="col">
-      <nav class="navbar navbar-expand-lg justify-content-center">
+      <nav class="navbar navbar-expand-md justify-content-center">
 
         <div class="">
           <div class="navbar-nav menu">
             <a class="nav-link nav-item" routerLink="home" [routerLinkActive]="['link-active']">Welcome</a>
             <a class="nav-link nav-item" routerLink="menu" [routerLinkActive]="['link-active']">Menu</a>
             <a class="nav-link nav-item" routerLink="catering" [routerLinkActive]="['link-active']">Catering</a>
-            <a class="nav-link nav-item" routerLink="community" [routerLinkActive]="['link-active']">Our Location</a>
-            <a class="nav-link nav-item" routerLink="contact" [routerLinkActive]="['link-active']">Community</a>
+            <a class="nav-link nav-item" routerLink="location" [routerLinkActive]="['link-active']">Our Location</a>
+            <a class="nav-link nav-item" routerLink="community" [routerLinkActive]="['link-active']">Community</a>
             <span pl-5>
-              <a (click)="oSM()">
+            <a (click)="openNav()">
                 <svg width="30" height="30">
                   <path d="M0,5 30,5" stroke="#999" stroke-width="4" />
                   <path d="M0,14 30,14" stroke="#999" stroke-width="4" />
@@ -19,38 +19,70 @@
                 </svg>
               </a>
             </span>
-            </div>
+          </div>
         </div>
       </nav>
     </div>
   </div>
 </div>
+<div class="container mt-0 ml-0 fixed" *ngIf="!show">
+  <div class="row d-md-none">
+    <div class="col">
+              <a (click)="openNav()">
+                <svg width="30" height="30">
+                  <path d="M0,5 30,5" stroke="#999" stroke-width="4" />
+                  <path d="M0,14 30,14" stroke="#999" stroke-width="4" />
+                  <path d="M0,23 30,23" stroke="#999" stroke-width="4" />
+                </svg>
+              </a>
+    </div>
+  </div>
+</div>
 
-
-<div class="container nav-menu" [@scrollAnimation]="state" [hidden]="!state">
-  <div class="row">
+<div class="container" [@scrollAnimation]="state" [hidden]="!state">
+  <div class="row d-none d-md-block">
     <div class="col justify-content-center d-flex">
       <img src="../../assets/images/header/logo/cw-logo.png" alt="" class="logo justify-content-center">
     </div>
   </div>
-  <div class="row">
+  <div class="row d-none d-md-block">
     <div class="col">
-      <nav class="navbar navbar-expand-lg justify-content-center">
-
+      <nav class="navbar navbar-expand-md justify-content-center">
         <div class="">
           <div class="navbar-nav menu">
             <a class="nav-link nav-item" routerLink="home" [routerLinkActive]="['link-active']">Welcome</a>
             <a class="nav-link nav-item" routerLink="menu" [routerLinkActive]="['link-active']">Menu</a>
             <a class="nav-link nav-item" routerLink="catering" [routerLinkActive]="['link-active']">Catering</a>
-            <a class="nav-link nav-item" routerLink="community" [routerLinkActive]="['link-active']">Our Location</a>
-            <a class="nav-link nav-item" routerLink="contact" [routerLinkActive]="['link-active']">Community</a>
+            <a class="nav-link nav-item" routerLink="location" [routerLinkActive]="['link-active']">Our Location</a>
+            <a class="nav-link nav-item" routerLink="community" [routerLinkActive]="['link-active']">Community</a>
             <a (click)="openNav()">
               <svg width="30" height="30">
                 <path d="M0,5 30,5" stroke="#999" stroke-width="4" />
                 <path d="M0,14 30,14" stroke="#999" stroke-width="4" />
                 <path d="M0,23 30,23" stroke="#999" stroke-width="4" />
               </svg>
-              </a>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="container" [@scrollAnimation]="state" [hidden]="!state">
+  <div class="row d-md-none">
+    <div class="col justify-content-center d-flex">
+      <img src="../../assets/images/header/logo/cw-logo.png" alt="" class="logo justify-content-center">
+      <nav class="navbar navbar-expand-md justify-content-center">
+        <div class="">
+          <div class="navbar-nav menu">
+
+            <a (click)="openNav()">
+              <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#999" stroke-width="4" />
+                <path d="M0,14 30,14" stroke="#999" stroke-width="4" />
+                <path d="M0,23 30,23" stroke="#999" stroke-width="4" />
+              </svg>
+            </a>
           </div>
         </div>
       </nav>

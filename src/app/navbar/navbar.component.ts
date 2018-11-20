@@ -29,7 +29,7 @@ export class NavbarComponent implements OnInit {
   mobileScreen: boolean;
 
 @Input()
-openNav: any;
+  openNav: any;
 
 @Input()
   cSM: any;

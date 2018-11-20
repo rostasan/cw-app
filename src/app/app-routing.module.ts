@@ -1,3 +1,4 @@
+import { LocationComponent } from './content/location/location.component';
 import { ChownowComponent } from './content/chownow/chownow.component';
 import { ContactComponent } from './content/contact/contact.component';
 import { CommunityComponent } from './content/community/community.component';
@@ -13,7 +14,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'catering', component: CateringComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'location', component: LocationComponent },
   { path: 'community', component: CommunityComponent },
   // external links
   {
