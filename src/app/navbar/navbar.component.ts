@@ -54,7 +54,6 @@ export class NavbarComponent implements OnInit {
       this.state = 'false';
       this.show = false;
     }
-
   }
 
   // openSlideMenu() {

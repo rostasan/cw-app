@@ -18,14 +18,14 @@ export class AppComponent implements OnInit {
   window: number;
 
   ngOnInit() {
-    this.window = $(window).width();
-    if (this.window >= 751) {
-      // 768px portrait
-      this.mobileScreen = false;
-    } else if ($(window).width() <= 750) {
-      this.mobileScreen = true;
-    }
-    console.log(this.mobileScreen, this.window);
+    // this.window = $(window).width();
+    // if (this.window >= 751) {
+    //   // 768px portrait
+    //   this.mobileScreen = false;
+    // } else if ($(window).width() <= 750) {
+    //   this.mobileScreen = true;
+    // }
+    // console.log(this.mobileScreen, this.window);
   }
 
   openNav() {

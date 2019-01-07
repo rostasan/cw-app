@@ -147,5 +147,8 @@
       }
     }
   },
-  "defaultProject": "cw-app"
+  "defaultProject": "cw-app",
+  "cli": {
+    "defaultCollection": "@nativescript/schematics"
+  }
 }

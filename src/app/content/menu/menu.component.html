@@ -1,394 +1,400 @@
-<div class="row menu-body">
-  <div class="col cell mt-2 ml-5 mr-5">
-      <div class="page_title">
-        <h1 class="amatic white">
-          Mmm Mmm Menu 
-        </h1>
+<div class="container-flex" *ngIf="menus$ | async as menus; else loading">
+  <div class="row menu-body">
+    <div class="col cell mt-2 ml-5 mr-5">
+        <div class="page_title">
+          <h1 class="amatic white">
+            Mmm Mmm Menu 
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col">
+
+              <img src="../../../assets/images/menu/blue-ribbon-our-promise.png" alt="" class="img_ribbon">
+
+              <h2 class="amatic titles mt-5">Our Food</h2>
+              <p>At Chicken Works and Salad Company we cook the best FLAME-BROILED CHICKEN in Chicago. We serve chicken
+                right off the grill with homemade sides and mix into hefty-built wraps, pita sandwiches, soup and
+                chili. Customers love our farm-fresh SALAD BAR, always crisp, wholesome and plentiful.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col center">
+                <img src="../../../assets/images/menu/farm-fresh-chicken.png" alt="" width="185" height="185">
+                <h2 class="amatic">Farm Fresh Chicken</h2>
+                <p>marinated overnight &amp; slow-cooked over an open flame</p>
+          </div>
+          <div class="col center">
+              <img src="../../../assets/images/menu/homemade-soup-sides.png" alt="" width="185" height="185">
+              <h2 class="amatic">Homemade Sides &amp; Soup</h2>
+              <p>made-from-scratch daily</p>
+          </div>
+          <div class="col center">
+              <img src="../../../assets/images/menu/wholesome-salad-bar.png" alt="" width="185" height="185">
+              <h2 class="amatic">Wholesome Salad Bar</h2>
+              <p>crisp &amp; well kept, Large choice of ingredients</p>
+          </div>
+        </div>
+
+  <!-- section image header -->
+        <div class="mt-5 mb-5 half-chicken"></div>
+    <!-- start menu -->
+            <h2 class="amatic stretch center center">
+                <img src="../../../assets/images/menu/l-flame.png">
+                  Half Chicken 
+                <img src="../../../assets/images/menu/r-flame.png">
+            </h2>
+      <div class="row"">
+        <div class="col m-1 p-3 *ngFor="let menu of menus">
+              <h5 class="menu_post">
+                <div class="row">
+                  <div class="col-8">
+                    {{ menu.menu }} {{ menu.title }}
+                  </div>
+                  <div class="col text-right">
+                    {{ menu.price }}
+                  </div>
+                </div>
+              </h5>
+              <div>
+                {{ menu.description }}
+              </div>
+           
+        </div>
+        <div class="col m-1 p-3">
+            <h5 class="menu_post">
+                <div class="row">
+                  <div class="col-8">
+                    2. Half Chicken
+                  </div>
+                  <div class="col text-right">
+                    $7.69
+                  </div>
+                </div>
+            </h5>
+        </div>
       </div>
+    
       <div class="row">
-        <div class="col">
-
-            <img src="../../../assets/images/menu/blue-ribbon-our-promise.png" alt="" class="img_ribbon">
-
-            <h2 class="amatic titles mt-5">Our Food</h2>
-            <p>At Chicken Works and Salad Company we cook the best FLAME-BROILED CHICKEN in Chicago. We serve chicken
-              right off the grill with homemade sides and mix into hefty-built wraps, pita sandwiches, soup and
-              chili. Customers love our farm-fresh SALAD BAR, always crisp, wholesome and plentiful.</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col center">
-              <img src="../../../assets/images/menu/farm-fresh-chicken.png" alt="" width="185" height="185">
-              <h2 class="amatic">Farm Fresh Chicken</h2>
-              <p>marinated overnight &amp; slow-cooked over an open flame</p>
-        </div>
-        <div class="col center">
-            <img src="../../../assets/images/menu/homemade-soup-sides.png" alt="" width="185" height="185">
-            <h2 class="amatic">Homemade Sides &amp; Soup</h2>
-            <p>made-from-scratch daily</p>
-        </div>
-        <div class="col center">
-            <img src="../../../assets/images/menu/wholesome-salad-bar.png" alt="" width="185" height="185">
-            <h2 class="amatic">Wholesome Salad Bar</h2>
-            <p>crisp &amp; well kept, Large choice of ingredients</p>
-        </div>
-      </div>
-
-<!-- start menu -->
-      <div class="mt-5 mb-5 half-chicken"></div>
-          <h2 class="amatic stretch center center">
-              <img src="../../../assets/images/menu/l-flame.png">
-                Half Chicken 
-              <img src="../../../assets/images/menu/r-flame.png">
-          </h2>
-    <div class="row">
-      <div class="col m-1 p-3">
-             <h5 class="menu_post">
+          <div class="col m-1 p-3">
+            <h5 class="menu_post">
               <div class="row">
                 <div class="col-8">
-                  1. Chicken Works
+                  3. Half Chicken Dinner Special
                 </div>
                 <div class="col text-right">
-                  $9.89
+                  $9.49
                 </div>
               </div>
             </h5>
-                 Half Chicken served with pita and choice of two regular sides
+            <div class="detail">Served with pita, choice of side dish and fountain drink</div>
+          </div>
+        <div class="col">
+        </div>
       </div>
-      <div class="col m-1 p-3">
-          <h5 class="menu_post">
+        <h2 class="amatic stretch center center mt-5">
+          <img src="../../../assets/images/menu/l-flame.png">
+          Whole Chicken
+          <img src="../../../assets/images/menu/r-flame.png">
+        </h2>
+        <div class="row">
+          <div class="col m-1 p-3">
+                      <h5 class="menu_post">
+                        <div class="row">
+                          <div class="col-8">
+                                4. Chicken Works Special
+                          </div>
+                          <div class="col text-right">
+                            $16.99
+                          </div>
+                        </div>
+                      </h5>
+              <div class="detail">Whole Chicken served with pita and choice of two large sides</div>
+          </div>
+          <div class="col m-1 p-3">
+        <h5 class="menu_post">
+            <div class="row">
+              <div class="col-8">
+                  5. Whole Chicken
+              </div>
+              <div class="col text-right">
+                $11.99
+              </div>
+            </div>
+          </h5>
+          </div>
+        </div>
+        <h2 class="amatic stretch center">
+          <img src="../../../assets/images/menu/l-flame.png">
+          Quarter Chicken
+          <img src="../../../assets/images/menu/r-flame.png">
+        </h2>
+        <div class="row">
+          <div class="col m-1 p-3">
+            <h5 class="menu_post">
               <div class="row">
                 <div class="col-8">
-                   2. Half Chicken
+                    6. Quarter Chicken Dark Meat
                 </div>
                 <div class="col text-right">
-                  $7.69
+                  $4.89
                 </div>
               </div>
-          </h5>
-      </div>
-    </div>
-   
-    <div class="row">
-        <div class="col m-1 p-3">
-          <h5 class="menu_post">
-            <div class="row">
-              <div class="col-8">
-                3. Half Chicken Dinner Special
-              </div>
-              <div class="col text-right">
-                $9.49
-              </div>
-            </div>
-          </h5>
-          <div class="detail">Served with pita, choice of side dish and fountain drink</div>
-        </div>
-      <div class="col">
-      </div>
-    </div>
-      <h2 class="amatic stretch center center mt-5">
-        <img src="../../../assets/images/menu/l-flame.png">
-        Whole Chicken
-        <img src="../../../assets/images/menu/r-flame.png">
-      </h2>
-      <div class="row">
-        <div class="col m-1 p-3">
-                    <h5 class="menu_post">
-                      <div class="row">
-                        <div class="col-8">
-                               4. Chicken Works Special
-                        </div>
-                        <div class="col text-right">
-                          $16.99
-                        </div>
-                      </div>
-                    </h5>
-            <div class="detail">Whole Chicken served with pita and choice of two large sides</div>
-        </div>
-        <div class="col m-1 p-3">
-      <h5 class="menu_post">
-          <div class="row">
-            <div class="col-8">
-                5. Whole Chicken
-            </div>
-            <div class="col text-right">
-              $11.99
-            </div>
+            </h5>
+            <div>Leg Thigh</div>
           </div>
-        </h5>
-        </div>
-      </div>
-      <h2 class="amatic stretch center">
-        <img src="../../../assets/images/menu/l-flame.png">
-        Quarter Chicken
-        <img src="../../../assets/images/menu/r-flame.png">
-      </h2>
-      <div class="row">
-        <div class="col m-1 p-3">
-          <h5 class="menu_post">
-            <div class="row">
-              <div class="col-8">
-                  6. Quarter Chicken Dark Meat
+          <div class="col m-1 p-3">
+            <h5 class="menu_post">
+              <div class="row">
+                <div class="col-8">
+                  7. Quarter Chicken White Meat
+                </div>
+                <div class="col text-right">
+                  $5.89
+                </div>
               </div>
-              <div class="col text-right">
-                $4.89
-              </div>
-            </div>
-          </h5>
-          <div>Leg Thigh</div>
-        </div>
-        <div class="col m-1 p-3">
-          <h5 class="menu_post">
-            <div class="row">
-              <div class="col-8">
-                7. Quarter Chicken White Meat
-              </div>
-              <div class="col text-right">
-                $5.89
-              </div>
-            </div>
-          </h5>
-          <div class="detail">Breast &amp; Wing</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h5 class="menu_post">
-            <div class="row">
-              <div class="col-8">
-                8. Quarter Chicken Dark Meat Special
-              </div>
-              <div class="col text-right">
-                $6.99
-              </div>
-            </div>
-          </h5>
-          <div class="detail">Served with pita, choice of side dish and fountain drink</div>
-        </div>
-        <div class="col">
-          <h5 class="menu_post">
-            <div class="row">
-              <div class="col-8">
-                9. Quarter Chicken White Meat Special
-              </div>
-              <div class="col text-right">
-                $7.99
-              </div>
-            </div>
-          </h5>
-          <div class="detail">Served with pita, choice of side dish and fountain drink</div>
-        </div>
-      </div>
-      <div class="soup mt-5 mb-5"></div>
-      <h2 class="amatic stretch center">
-        <img src="../../../assets/images/menu/l-bw-flame.png">
-        Soup and Sandwich
-        <img src="../../../assets/images/menu/r-bw-flame.png">
-      </h2>
-      <div class="row">
-        <div class="col">
-          <h5 class="menu_post">
-            <div class="row">
-            <div class="col-8">
-              10. Chicken Soup/Soup of the Day
-            </div>
-            <div class="col text-right">
-              $3.29 - $4.99
-            </div>
-          </div>
-          </h5>
-        </div>
-        <div class="col">
-          <h5 class="menu_post">
-          <div class="row">
-            <div class="col-8">
-              11. Chicken Pita Sandwich
-            </div>
-            <div class="col text-right">
-              $6.49
-            </div>
-          </div>
-          </h5>
-          <div class="detail">
-            Soft pita filled with sliced chicken breast, lettuce, tomato and mayo
+            </h5>
+            <div class="detail">Breast &amp; Wing</div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h5 class="menu_post">
-          <div class="row">
-            <div class="col-8">
-              12. Soup &amp; Sandwich Special
-            </div>
-            <div class="col text-right">
-              $8.49
-            </div>
+        <div class="row">
+          <div class="col">
+            <h5 class="menu_post">
+              <div class="row">
+                <div class="col-8">
+                  8. Quarter Chicken Dark Meat Special
+                </div>
+                <div class="col text-right">
+                  $6.99
+                </div>
+              </div>
+            </h5>
+            <div class="detail">Served with pita, choice of side dish and fountain drink</div>
           </div>
-          </h5>
-          <div class="detail">
-            Chicken pita sandwich served with cup of soup &amp; fountain drink
-          </div>
-        </div>
-        <div class="col">
-
-        </div>
-      </div>
-      <div class="page_content_wraps"></div>
-
-      <h2 class="amatic stretch center">
-        <img src="../../../assets/images/menu/l-bw-flame.png">
-        Wraps
-        <img src="../../../assets/images/menu/r-bw-flame.png">
-      </h2>
-      <div class="row">
-        <div class="col">
-          <h5 class="menu_post">
-            13. Chicken Works Wrap
-            $6.99
-          </h5>
-          <div class="detail">
-            Chicken breast, bacon bits, lettuce, sharp cheddar cheese, tomatoes, cucumber and honey mustard sauce rolled-up in a
-            spinach flavored tortilla
+          <div class="col">
+            <h5 class="menu_post">
+              <div class="row">
+                <div class="col-8">
+                  9. Quarter Chicken White Meat Special
+                </div>
+                <div class="col text-right">
+                  $7.99
+                </div>
+              </div>
+            </h5>
+            <div class="detail">Served with pita, choice of side dish and fountain drink</div>
           </div>
         </div>
-        <div class="col">
-          <h5 class="menu_post">
-            14. Veggie Wrap
-            $7.49</h5>
-          <div class="detail">
-            Spinach, lettuce, tomatoes, cucumber, zucchini and sunflower seeds with blue cheese, cheddar &amp; cream cheese
-            rolled-up in a spinach flavored tortilla
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h5 class="menu_post">
-            15. Chicken Caesar Wrap
-            $6.99
-          </h5>
-          <div class="detail">
-            Chicken breast, chopped romaine lettuce, creamy caesar salad dressing, croutons and parmesan cheese rolled-up in a
-            spinach flavored tortilla
-          </div>
-        </div>
-        <div class="col">
-
-        </div>
-      </div>
-      <div class="salad-bar center">
-        <h2 class="amatic stretch center" class="ppb_title">SALAD BAR</h2>
-        <h2> 
-          <img src="../../../assets/images/menu/l-green-flame.png">
-          $7.99 a pound
-          <img src="../../../assets/images/menu/r-green-flame.png">
-        </h2>
-      </div>
-    <h2 class="amatic stretch center">
-      <img src="../../../assets/images/menu/l-bw-flame.png">
-      Homemade Sides
-      <img src="../../../assets/images/menu/r-bw-flame.png">
-    </h2>
-    <div class="row">
-      <div class="col center">
-        <h2 class="blue">SERVED COLD</h2>
-
-        <ul>
-          <li>Potato Salad</li>
-          <li>Pasta Salad</li>
-          <li>Coleslaw</li>
-          <li>Carrots with Pineapple</li>
-          <li>Cucumber Salad</li>
-        </ul>
-      </div>
-      <div class="col center">
-        <h2 class="red">SERVED HOT</h2>
-
-        <ul class="mb-5">
-          <li>Mac &amp; Cheese</li>
-          <li>Mashed Potatoes &amp; Gravy</li>
-          <li>Baked Potato</li>
-          <li>Corn</li>
-          <li>Sweet Curry Rice with Vegetables</li>
-          <li>Dirty Rice</li>
-          <li>Green Beans</li>
-          <li>Baked Beans</li>
-          <li>Spiced Beans</li>
-        </ul>
-      </div>
-    </div>
-    <h2 class="amatic stretch center">
-      <img src="../../../assets/images/menu/l-bw-flame.png">
-      Additional Pieces
-      <img src="../../../assets/images/menu/r-bw-flame.png">
-    </h2>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          Breast
-        </div>
-        <div class="col"></div>
-        <div class="col  text-right">
-          $3.50
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          Leg or Thigh
-        </div>
-        <div class="col"></div>
-        <div class="col  text-right">
-          $1.79
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          Pita
-        </div>
-        <div class="col"></div>
-        <div class="col  text-right">
-          ¢.99
-        </div>
-      </div>
-    </div>
-    <div class="row m-5">
-      <div class="col">
+        <div class="soup mt-5 mb-5"></div>
         <h2 class="amatic stretch center">
           <img src="../../../assets/images/menu/l-bw-flame.png">
-          Fountain Drink
+          Soup and Sandwich
           <img src="../../../assets/images/menu/r-bw-flame.png">
         </h2>
-        <h3 class="center">20 oz. $1.79</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-          <h1 class="amatic stretch center" class="amatic display-4">Simple and Delicious</h1>
-          <div class="page_header_sep left">
+        <div class="row">
+          <div class="col">
+            <h5 class="menu_post">
+              <div class="row">
+              <div class="col-8">
+                10. Chicken Soup/Soup of the Day
+              </div>
+              <div class="col text-right">
+                $3.29 - $4.99
+              </div>
+            </div>
+            </h5>
           </div>
-          In addition to our juicy chicken, fresh salad and homemade sides,
-          we offer <span class="bold">BYOB</span>  (Bring Your Own Beverage) when you dine in with us.
-          <!-- <a href="#">Download Menu</a> | <a href="#">en Español</a> -->
-          <p class="m-1">We proudly accept:<br>
-            <img class="charge" src="../../../assets/images/menu/charge/visa-dark.png">
-            <img class="charge" src="../../../assets/images/menu/charge/mastercard-dark.png">
-            <img class="charge" src="../../../assets/images/menu/charge/discover-dark.png">
-            <img class="charge" src="../../../assets/images/menu/charge/american-express-dark.png">
-          </p>
-         <div class="bold">Want it now?</div> 
+          <div class="col">
+            <h5 class="menu_post">
+            <div class="row">
+              <div class="col-8">
+                11. Chicken Pita Sandwich
+              </div>
+              <div class="col text-right">
+                $6.49
+              </div>
+            </div>
+            </h5>
+            <div class="detail">
+              Soft pita filled with sliced chicken breast, lettuce, tomato and mayo
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5 class="menu_post">
+            <div class="row">
+              <div class="col-8">
+                12. Soup &amp; Sandwich Special
+              </div>
+              <div class="col text-right">
+                $8.49
+              </div>
+            </div>
+            </h5>
+            <div class="detail">
+              Chicken pita sandwich served with cup of soup &amp; fountain drink
+            </div>
+          </div>
+          <div class="col">
 
-          <button class="btn btn-success btn-lg">
-            <a href="https://ordering.chownow.com/order/11109/locations" class="src" target="_blank">
-              Get Delivery </a>
-          </button>
-          
-      </div>
-      <div class="col">
-        <div class="image_wrapper">
-                   <img src="../../../assets/images/menu/cw-ribbon.png" alt="" class="portfolio_img">
           </div>
+        </div>
+        <div class="page_content_wraps"></div>
+
+        <h2 class="amatic stretch center">
+          <img src="../../../assets/images/menu/l-bw-flame.png">
+          Wraps
+          <img src="../../../assets/images/menu/r-bw-flame.png">
+        </h2>
+        <div class="row">
+          <div class="col">
+            <h5 class="menu_post">
+              13. Chicken Works Wrap
+              $6.99
+            </h5>
+            <div class="detail">
+              Chicken breast, bacon bits, lettuce, sharp cheddar cheese, tomatoes, cucumber and honey mustard sauce rolled-up in a
+              spinach flavored tortilla
+            </div>
+          </div>
+          <div class="col">
+            <h5 class="menu_post">
+              14. Veggie Wrap
+              $7.49</h5>
+            <div class="detail">
+              Spinach, lettuce, tomatoes, cucumber, zucchini and sunflower seeds with blue cheese, cheddar &amp; cream cheese
+              rolled-up in a spinach flavored tortilla
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5 class="menu_post">
+              15. Chicken Caesar Wrap
+              $6.99
+            </h5>
+            <div class="detail">
+              Chicken breast, chopped romaine lettuce, creamy caesar salad dressing, croutons and parmesan cheese rolled-up in a
+              spinach flavored tortilla
+            </div>
+          </div>
+          <div class="col">
+
+          </div>
+        </div>
+        <div class="salad-bar center">
+          <h2 class="amatic stretch center" class="ppb_title">SALAD BAR</h2>
+          <h2> 
+            <img src="../../../assets/images/menu/l-green-flame.png">
+            $7.99 a pound
+            <img src="../../../assets/images/menu/r-green-flame.png">
+          </h2>
+        </div>
+      <h2 class="amatic stretch center">
+        <img src="../../../assets/images/menu/l-bw-flame.png">
+        Homemade Sides
+        <img src="../../../assets/images/menu/r-bw-flame.png">
+      </h2>
+      <div class="row">
+        <div class="col center">
+          <h2 class="blue">SERVED COLD</h2>
+
+          <ul>
+            <li>Potato Salad</li>
+            <li>Pasta Salad</li>
+            <li>Coleslaw</li>
+            <li>Carrots with Pineapple</li>
+            <li>Cucumber Salad</li>
+          </ul>
+        </div>
+        <div class="col center">
+          <h2 class="red">SERVED HOT</h2>
+
+          <ul class="mb-5">
+            <li>Mac &amp; Cheese</li>
+            <li>Mashed Potatoes &amp; Gravy</li>
+            <li>Baked Potato</li>
+            <li>Corn</li>
+            <li>Sweet Curry Rice with Vegetables</li>
+            <li>Dirty Rice</li>
+            <li>Green Beans</li>
+            <li>Baked Beans</li>
+            <li>Spiced Beans</li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="amatic stretch center">
+        <img src="../../../assets/images/menu/l-bw-flame.png">
+        Additional Pieces
+        <img src="../../../assets/images/menu/r-bw-flame.png">
+      </h2>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            Breast
+          </div>
+          <div class="col"></div>
+          <div class="col  text-right">
+            $3.50
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            Leg or Thigh
+          </div>
+          <div class="col"></div>
+          <div class="col  text-right">
+            $1.79
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            Pita
+          </div>
+          <div class="col"></div>
+          <div class="col  text-right">
+            ¢.99
+          </div>
+        </div>
+      </div>
+      <div class="row m-5">
+        <div class="col">
+          <h2 class="amatic stretch center">
+            <img src="../../../assets/images/menu/l-bw-flame.png">
+            Fountain Drink
+            <img src="../../../assets/images/menu/r-bw-flame.png">
+          </h2>
+          <h3 class="center">20 oz. $1.79</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <h1 class="amatic stretch center" class="amatic display-4">Simple and Delicious</h1>
+            <div class="page_header_sep left">
+            </div>
+            In addition to our juicy chicken, fresh salad and homemade sides,
+            we offer <span class="bold">BYOB</span>  (Bring Your Own Beverage) when you dine in with us.
+            <!-- <a href="#">Download Menu</a> | <a href="#">en Español</a> -->
+            <p class="m-1">We proudly accept:<br>
+              <img class="charge" src="../../../assets/images/menu/charge/visa-dark.png">
+              <img class="charge" src="../../../assets/images/menu/charge/mastercard-dark.png">
+              <img class="charge" src="../../../assets/images/menu/charge/discover-dark.png">
+              <img class="charge" src="../../../assets/images/menu/charge/american-express-dark.png">
+            </p>
+          <div class="bold">Want it now?</div> 
+
+            <button class="btn btn-success btn-lg">
+              <a href="https://ordering.chownow.com/order/11109/locations" class="src" target="_blank">
+                Get Delivery </a>
+            </button>
+            
+        </div>
+        <div class="col">
+          <div class="image_wrapper">
+                    <img src="../../../assets/images/menu/cw-ribbon.png" alt="" class="portfolio_img">
+            </div>
+        </div>
       </div>
     </div>
   </div>

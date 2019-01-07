@@ -95,3 +95,13 @@ npm install --save font-awesome
 }
 
 npm install @types/node --save
+
+
+********************************************************
+https://docs.nativescript.org/code-sharing/migrating-a-web-project
+
+adding NativeScript to project
+
+ng add @nativescript/schematics
+
+The NPM Android Runtime Project (npm install tns-android)
