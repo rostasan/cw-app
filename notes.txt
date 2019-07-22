@@ -105,3 +105,9 @@ adding NativeScript to project
 ng add @nativescript/schematics
 
 The NPM Android Runtime Project (npm install tns-android)
+
+
+
+NCU -u 
+"typescript": "~3.4.5",
+npm install

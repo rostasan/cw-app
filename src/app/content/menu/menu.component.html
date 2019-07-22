@@ -44,8 +44,8 @@
                   Half Chicken 
                 <img src="../../../assets/images/menu/r-flame.png">
             </h2>
-      <div class="row"">
-        <div class="col m-1 p-3 *ngFor="let menu of menus">
+      <div class="row" *ngIf="menus$ | async as menus">
+        <div class="col m-1 p-3" *ngFor="let menu of menus">
               <h5 class="menu_post">
                 <div class="row">
                   <div class="col-8">
