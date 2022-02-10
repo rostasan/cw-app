@@ -29,7 +29,7 @@
     "jquery": "^3.4.1",
     "nativescript-angular": "~8.0.2",
     "nativescript-theme-core": "~2.0.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "reflect-metadata": "~0.1.13",
     "sass-loader": "^7.1.0",
     "tns-android": "^6.0.0",
